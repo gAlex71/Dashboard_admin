@@ -1,6 +1,8 @@
 import React from "react";
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
+import Navbar from "./pages/global/Navbar";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 const App = () => {
   const [ theme, colorMode ] = useMode();
@@ -9,7 +11,9 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline/>
         <div className="app">
-          <main className="content"></main>
+          <main className="content">
+            <Navbar/>
+          </main>
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
