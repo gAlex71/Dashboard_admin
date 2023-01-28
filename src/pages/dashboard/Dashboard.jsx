@@ -15,5 +15,4 @@ const Dashboard = () => {
         </Box>
     )
 };
-// 1.27
 export default Dashboard;
